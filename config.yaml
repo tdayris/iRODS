@@ -1,0 +1,4 @@
+params:
+  imeta_qu: -d
+  imeta_ls: -d
+workdir: .
