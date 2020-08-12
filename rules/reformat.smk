@@ -6,7 +6,7 @@ rule extract_collections:
     message:
         "Parsing imeta qu output"
     threads:
-        1
+        3
     resources:
         mem_mb = lambda wildcards, attempt: min(128 * attempt, 768),
         time_min = lambda wildcards, attempt: attempt * 60
