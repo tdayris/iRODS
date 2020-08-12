@@ -13,6 +13,8 @@ include: "rules/common.smk"
 include: "rules/imeta.smk"
 include: "rules/reformat.smk"
 
+localrules: gather_collections, gather_metadata
+
 
 workdir: config["workdir"]
 container: "docker://continuumio/miniconda3:4.4.10"
