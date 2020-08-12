@@ -31,5 +31,7 @@ rule gather_metadata:
         time_min = lambda wildcards, attempt: attempt * 60
     params:
         extra = config["params"].get("imeta_ls_extra", "-d")
+    log:
+        "logs/imeta/ls/raw.log"
     wrapper:
         f"{git}/bio/iRODS/imeta_ls"
