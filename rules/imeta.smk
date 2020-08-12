@@ -19,7 +19,7 @@ rule gather_collections:
 
 rule gather_metadata:
     input:
-        "imeta/qu/collections.txt"
+        collection = "imeta/qu/collections.txt"
     output:
         temp("imeta/ls/raw_metadata.txt")
     message:
