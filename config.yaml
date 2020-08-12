@@ -2,3 +2,6 @@ params:
   imeta_qu: -d
   imeta_ls: -d
 workdir: .
+imeta_qu:
+  protocol: mRNA%
+  projectName: MetaPRISM
